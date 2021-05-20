@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            function checarIdade(idade) {
+                if (idade >= 18) {
+                    return true
+                }
+                return confirm("Você tem permissão dos seus pais?")                
+            }
+
+            let idade = +prompt("Qual é a sua idade?")
+
+            if (checarIdade(idade)) {
+                alert("Acesso permitido!")
+            } else {
+                alert("Acesso negado!")
+            }
+        }
+    </script>
+</body>
+</html>
