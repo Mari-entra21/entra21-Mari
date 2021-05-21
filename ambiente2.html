@@ -7,31 +7,90 @@
 </head>
 <body>
     <script>
-        /*1) Faça uma função que recebe um valor inteiro e verifica se o valor é positivo. 
-A função deve retornar um valor booleano. Receba um valor do usuário e mostre o resultado
-da função.
+    //1) Faça uma função que recebe um valor inteiro e verifica se o valor é positivo. 
+    //A função deve retornar um valor booleano. Receba um valor do usuário e mostre o resultado
+    //da função.
+
+    /*let valor = +prompt('Digite o valor!')  
+    function checarValor(Valor) {
+        if (Valor >= 0) {
+            return 'Positivo!'
+        } else {
+            return 'Negativo!'
+        }
+    }
+
+    console.log(checarValor(valor))
+
+    function checarValor(Valor) {
+                if (idade >= 18) {
+                    return true
+                }
+                return confirm("Você tem permissão dos seus pais?")                
+            }
+
+            let idade = +prompt("Qual é a sua idade?")
+
+            if (checarIdade(idade)) {
+                alert("Acesso permitido!")
+            } else {
+                alert("Acesso negado!")*/
+            
+        
+
+
+//2) Crie uma função minimo(a, b) que retorna o menor valor entre dois números a e b.
+//Receba os dois valores do usuário e mostre o resultado da função.
+
+
+    /*let a = +prompt('Digite o primeiro valor')
+    let b = +prompt('Digite o segundo valor')
+    function minimo(a, b) {
+        if (a < b) {
+            return 'O primeiro valor é menor'
+        } else {
+            return 'O segundo valor é menor'
+        }
+    }
+
+    console.log(minimo(a, b))*/
 
 
 
-2) Crie uma função minimo(a, b) que retorna o menor valor entre dois números a e b.
-Receba os dois valores do usuário e mostre o resultado da função.
+//3) Crie uma função potencia(a, b) que retorna a elevado a b. Receba os dois valores do usuário e 
+//mostre o resultado da função.
+
+
+    /*let a = +prompt('Digite o primeiro valor')
+    let b = +prompt('Digite o segundo valor')
+    function potencia(a, b) {
+        return a ** b
+    }
+
+    let resultado = potencia(a, b)
+
+    console.log(potencia(a, b))*/
+
+
+//4) Crie uma script que receba o valor de 3 notas, utilize uma função para calcular a média e
+//mostre ela na tela.
+
+
+    /*let n1 = +prompt('Digite a nota 1')
+    let n2 = +prompt('Digite a nota 2')
+    let n3 = +prompt('Digite a nota 3')
+    function media(n1, n2, n3) {
+        return (n1 + n2 + n3)/3
+    } 
+
+    let res = media(n1, n2, n3)
+
+    console.log(media(n1, n2, n3))*/
 
 
 
 
-3) Crie uma função potencia(a, b) que retorna a elevado a b. Receba os dois valores do usuário e 
-mostre o resultado da função.
-
-
-
-
-4) Crie uma script que receba o valor de 3 notas, utilize uma função para calcular a média e
-mostre ela na tela.
-
-
-
-
-5) Faça um script que receba a média de um aluno e com a ajuda de uma função que recebe 
+/*5) Faça um script que receba a média de um aluno e com a ajuda de uma função que recebe 
 a média por parâmetro retorne o conceito da média conforme a tabela abaixo:
 +----------------+-----------+
 |     Média      |  Conceito |
@@ -40,21 +99,39 @@ a média por parâmetro retorne o conceito da média conforme a tabela abaixo:
 | de 5.0 à 6.9   |     C     |
 | de 7.0 à 8.9   |     B     |
 | de 9.0 à 10.0  |     A     |
-+----------------+-----------+
++----------------+-----------+*/
 
 
+    /*let media = +prompt("Digite a media")
+
+    function obtemConceito(media) {
+        // (0 <= media <= 4.9)
+        if (media >= 0.0 && media <= 4.9) {
+            return 'D'
+        } else if (media >= 5.0 && media <= 6.9) {
+            return 'C'
+        } else if (media >= 7.0 && media <= 8.9) {
+            return 'B'
+        } else if  (media >= 9.0 && media <= 10.0) {
+            return 'A'
+        }
+    } 
+
+    console.log(obtemConceito(media))*/
 
 
-6) Faça uma função que recebe, por parâmetro, a altura e o sexo de uma pessoa e 
+/*6) Faça uma função que recebe, por parâmetro, a altura e o sexo de uma pessoa e 
 retorna o seu peso ideal. Receba a altura e o sexo do usuário e mostre o resultado da função.
 Utilize as fórmulas:
 Mulher: 62.1 x altura - 44.7
-Homem: 72.7 x altura - 58
+Homem: 72.7 x altura - 58*/
+
+
+        
 
 
 
-
-7) Crie uma função que receba uma array e retorne o primeiro e o último elemento desse array como um novo.
+/*7) Crie uma função que receba uma array e retorne o primeiro e o último elemento desse array como um novo.
 O array pode ter qualquer tamanho.
 
 
