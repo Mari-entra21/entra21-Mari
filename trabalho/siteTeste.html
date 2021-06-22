@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrapper {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        .accordion {
+          background-color: #EECFA1;
+          color: #bb0303;
+          cursor: pointer;
+          padding: 18px;
+          width: 50%;
+          border: 0.5px;
+          margin: 15px;
+          text-align: center;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: rgb(228, 198, 153); 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: #EECFA1;
+          overflow: hidden;
+        }
+
+        .title{
+          background-color: #EECFA1;
+          color: #bb0303;
+          cursor: pointer;
+          padding: 20px;
+          width: 50%;
+          border: 0.5px;
+          text-align: center;
+          outline: none;
+          font-size: 25px;
+          transition: 0.4s;
+        }
+
+        {
+            margin: 0px;
+        }
+
+        body {            
+            background-image: url(static/img/mapaAntigo.png);                        
+            background-position: center center;
+            background-size: cover;            
+            background-repeat: no-repeat;
+            background-attachment: fixed;                         
+        }
+
+        .hero {
+            background-image: 
+                linear-gradient(to bottom, rgba(80, 80, 61, 0.5), rgba(0,0,255,0.5)),
+                url(hero.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 420px;
+        }
+        </style>
+
+    <link rel="stylesheet" href="imagens.css">
+    <title>Meu plano de viagens | By Mari </title>
+</head>
+<body>
+    <div class= "wrapper">
+    <h2 class="title">Por onde passei...</h2>
+
+<button class="accordion">Cidade Natal</button>
+<div class="panel">
+    <span class="image main"><img src="static/img/uberlândia (2).png" alt=""></span>
+    <p>Eu nasci e fui criada em uma cidade no interior de Minas Gerais, na quase pequena cidade de Uberlândia. Com quase 700 mil habitantes, a cidade é considerada uma das maiores e mais populosas do Triângulo Mineiro.</p>
+    <p>Uberlândia também é a 3º cidade mais rica do estado, tendo 6.4% do total, ficando atrás apenas de Betim(7,1%) e Belo Horizonte(8,0%).</p>
+</div>
+
+<button class="accordion">Lugares visitados</button>
+<div class="panel">
+    <span class="image main"><img src="static/img/caldasNovas (2).png" alt=""></span>
+    <p>Quando ainda morava na cidade miniera, eu tinha uma amiga cujo a família dela me adotou e me levavam para viajar com eles. Um dos lugares mais comuns de irmos viajar era a cidade de turística de Calda Novas, situada no Goiás.</p>
+    <p>Não saímos muito do hotel em dias normais, a não ser que fosse para almoçar no centro da cidade ou jantar na famosa jantinha que havia em frente ao hotel.</p>
+</div>
+
+<button class="accordion">Cidade atual</button>
+<div class="panel">
+    <span class="image main"><img src="static/img/timbo.jgp.jpg" alt=""></span>
+    <p>Depois de muito mal planejamento, eu finalmente consegui sair de Minas e vim parar em uma cidadezinha a 1.171,4km de distância de onde eu morava. Eu vim morar em Timbó-SC.</p>
+    <p>Se me arrependo? Não! Nem um pouco. A cidade não é lá muito grande, não tem a típica correria a qual eu estava habituada, mas acho que no fundo isso vai me fazer bem. Estava precisando mesmo descansar, colocar a cabeça em ordem.</p>
+</div>
+
+<button class="accordion">Para onde vou</button>
+<div class="panel">
+    <span class="image main"><img src="static/img/gramado.png" alt=""></span>
+    <p>Um lugar que tenho muita vontade de conhecer é cidade gaúcha, Gramado. </p>
+    <p>A cidade é conhecida por ter nfluencia dos colonos alemães do século XIX, resultando em um toque bávaro com chalés alpinos, chocolateiros e lojas de artesanato.</p> 
+    <p>Gramado é também conhecida pelas suas exibições de luzes de Natal e pelas hortênsias em flor na primavera, sendo uma opção turística interessante para aqueles que gostam de cultura e casas ao estilo antigo.</p>
+</div>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+    
+    </script>
+</body>
+</html>
